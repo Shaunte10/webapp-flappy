@@ -5,15 +5,13 @@ body {
     -o-background-size: cover;
     margin: 0;
     /*width: 100%;*/
-    background: url('flappy-bg.png') repeat;
+    background-color: black;
 }
 #header {
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background: url('flappy-header.png') top center no-repeat;
-    background-size: 100%;
+    background-color: black;
 }
 #cca {
     padding-top: 5%;
@@ -39,12 +37,10 @@ body {
     padding-top: 2%;
 }
 #footer {
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background: url('flappy-footer.png') top center no-repeat;
-    background-size: 100%;
+    background-color: black;
 }
 #footer p{
     color: white;

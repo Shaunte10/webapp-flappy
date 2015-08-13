@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../lib/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>DownTown</h1>
+        <p>Welcome to the best game ever!</p>
+        <p>Explore the NightLife in DownTown cities!</p>
+        <p>Collect dollars on the way to becoming a billionaire!</p>
+    </div>
+    <div class="row">
+        <div class="col-xs-10">
+            <div id="game"></div>
+        </div>
+
+        <div class="col-xs-2">
+            <p>Highest Scorers:</p>
+            <ul id="scoreBoard">
+            </ul>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-4">
+            <img src="../assets/title.png" class="img-circle img-responsive"/>
+        </div>
+        <div class="col-xs-4">
+
+            <img src="../assets/gamescreen.png" class="img-rounded img-responsive"/>
+        </div>
+        <div class="col-xs-4">
+            <img src="../assets/end.png" class="img-circle img-responsive"/>
+        </div>
+    </div>
+</div>
+<div id="greeting">
+    <h3>Save your score</h3>
+    <form id="greeting-form" method="post" action="/score">
+        <div class="form-group">
+            <label for="fullName">What's your name?</label>
+            <input type="text" id="fullName"
+                   name="fullName" class="form-control" placeholder="Shaunte">
+
+            <label for="email">What's your email?</label>
+            <input type="email" id="email" class="form-control"
+                   name="email" placeholder="shaunte@email.com">
+
+            <input type="hidden" id="score" name="score" value="0">
+        </div>
+        <button class="btn btn-default" type="submit">OK</button>
+    </form>
+</div>
+
+<script src="../lib/jquery.js"></script>
+<script src="../lib/phaser.min.js"></script>
+<script src="../js/flappy.js"></script>
+</body>
+</html>
